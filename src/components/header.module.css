@@ -1,0 +1,54 @@
+:root{
+  --header-bg: #001524;
+  --btn-bg: #5B0888;
+  --text: #ffffff;
+}
+
+.header{
+  height: 70px;
+  width: 100%;
+  background-color: var(--header-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navTitle{
+  text-decoration: none;
+  color: var(--text);
+  & * {
+    text-decoration: none;
+    color: var(--text);
+  }
+}
+
+.navLinks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navLink{
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  color: var(--text);
+}
+
+.Button {
+  padding: .85rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: var(--btn-bg);
+  color: aliceblue;
+  transition-delay: .01s;
+
+  &:hover{
+    scale: 1.02;
+  }
+}
